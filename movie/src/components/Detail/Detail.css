@@ -1,0 +1,38 @@
+.detail .containers {
+  border-bottom: 3px solid black;
+}
+
+@media screen and (max-width: 1023px) {
+}
+@media screen and (max-width: 767px) {
+  .intro {
+    height: 275px !important;
+    overflow: hidden;
+    padding: 20px;
+  }
+}
+
+.detail-info {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;;
+}
+
+.detail-director {
+    border-bottom: 1px solid black; 
+    padding: 10px 0;
+}
+.detail-writer {
+     border-bottom: 1px solid black; 
+     padding: 10px 0;
+}
+.detail-stars {
+     border-bottom: 1px solid black; 
+     padding: 10px 0;
+}

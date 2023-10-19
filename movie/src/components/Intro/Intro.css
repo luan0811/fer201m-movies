@@ -1,0 +1,252 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #222120;
+  --secondary-color: #f8f3ed;
+  --gray: #faf5ef;
+  --primary-font: "DM Sans";
+  --secondary-font: "Prata";
+}
+body {
+  font-family: var(--primary-font);
+  background-color: var(--secondary-color);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: var(--primary-color);
+}
+.intro {
+  width: 100%;
+  height: 900px;
+  position: relative;
+  /* z-index: -1; */
+}
+
+.intro-overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 900px;
+}
+
+.intro-video {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  position: relative;
+  background-attachment: fixed;
+  /* z-index: -2; */
+}
+
+.intro-first {
+  width: 100%;
+  height: auto;
+  visibility: visible;
+  /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+   However, delay the fade out process for 2.5 seconds */
+  animation: fadein 1.1s;
+}
+
+/* .intro-first video {
+  width: 100%;
+  height: auto;
+  margin-top: 4%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+} */
+
+.intro-info {
+  position: absolute;
+  top: 500px;
+  left: 70px;
+  width: 800px;
+}
+
+.intro-first h1 {
+  /* position: absolute;
+     bottom: 140px;
+     left: 90px;
+     color: yellow;
+     font-size: 30px; */
+  color: aliceblue;
+  float: left;
+  font-size: 60px;
+  line-height: 100px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.intro-first p {
+  /* position: absolute;
+     bottom: 120px;
+     left: 30px;
+     color: yellow;
+     font-size: 20px; */
+  color: aliceblue;
+  float: left;
+  text-align: left;
+  font-size: 20px;
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 1023px) {
+  .intro-info {
+    top: 40px;
+    left: 30px;
+    width: 300px;
+  }
+
+  .intro-first h1 {
+    color: aliceblue;
+    float: left;
+    font-size: 20px;
+  }
+
+  .intro-first p {
+    color: aliceblue;
+    float: left;
+    text-align: left;
+    font-size: 10px;
+  }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 64em) {
+  .intro-info {
+    top: 200px;
+    left: 30px;
+    width: 500px;
+  }
+
+  .intro-first h1 {
+    color: aliceblue;
+    float: left;
+    font-size: 25px;
+  }
+
+  .intro-first p {
+    color: aliceblue;
+    float: left;
+    text-align: left;
+    font-size: 20px;
+  }
+  .intro {
+    height: 650px;
+  }
+  .intro-overlay {
+    height: 650px;
+  }
+}
+
+/* PC: width >= 1024px */
+@media only screen and (min-width: 64em) {
+}
+
+/* animation */
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

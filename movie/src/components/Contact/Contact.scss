@@ -1,0 +1,19 @@
+.contact {
+     margin: 50px 0 50px 0;
+     padding: 0 0 100px 0;
+}
+.toast_message{
+     text-transform: capitalize;
+     top: 0;
+     transform: translate(0%,-35%);
+     .MuiAlert-message{
+       margin: auto;
+     }
+     .MuiSvgIcon-root {
+       margin: auto;
+     }
+     .MuiInputBase-input{
+       border-bottom: 0;
+     }
+     
+   }
