@@ -16,7 +16,7 @@ export default function FilmFC() {
     >
       <IntroFC></IntroFC>
       <h3 className="film-heading" style={{ color: theme.color }}>
-        Phim đang thịnh hành
+        Recommend for you
       </h3>
       <div
         className="containers"
@@ -34,7 +34,7 @@ export default function FilmFC() {
                 <Link to={`detail/${film.id}`}>
                   <button>
                     <a href="#popup1" id="openPopUp">
-                      Chi tiết <i className="fa-solid fa-angle-right"></i>
+                      Detail <i className="fa-solid fa-angle-right"></i>
                     </a>
                   </button>
                 </Link>

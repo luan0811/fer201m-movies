@@ -27,14 +27,14 @@ export default function CategoryFC() {
           }}
         >
           <h1 className="banner-heading" style={{ color: theme.color }}>
-            Thể loại
+            CATEGORY
           </h1>
           <p className="banner-desc" style={{ color: theme.color }}>
-            Chọn thể loại phim phù hợp với sở thích của bạn
+            Choose the category that fit you the best
           </p>
         </section>
         <h1 className="banner-heading" style={{ color: theme.color }}>
-          Hành động
+          ACTION
         </h1>
         {/* ______________________________ACTION - MOVIE______________________________ */}
         <section className="film-action">
@@ -73,7 +73,7 @@ export default function CategoryFC() {
         </div> */}
         {/* ________________________________________________________________________________ */}
         <h1 className="banner-heading" style={{ color: theme.color }}>
-        Lãng mạn
+          ROMANTIC
         </h1>
         {/* ______________________________ROMANTIC - MOVIE______________________________ */}
        
@@ -102,7 +102,7 @@ export default function CategoryFC() {
         </div> */}
         {/* ________________________________________________________________________________ */}
         <h1 className="banner-heading" style={{ color: theme.color }}>
-          Tài liệu
+          DOCUMENTARY
         </h1>
         {/* ______________________________DOCUMENTARY - MOVIE______________________________ */}
         {/* <div

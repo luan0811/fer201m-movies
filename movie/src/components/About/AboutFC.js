@@ -4,88 +4,94 @@ import { Collapsible, CollapsibleItem, Container, Icon } from 'react-materialize
 import { ThemeContext } from '../ThemeContext'
 import { useContext } from 'react'
 export default function AboutFC() {
-    const { theme } = useContext(ThemeContext);
-    return (
-        <Container
-            style={{ borderBottom: theme.borderBottom, padding: "100px 0" }}
-        >
-            <Collapsible
+     const { theme } = useContext(ThemeContext);
+  return (
+    <Container
+    style={{borderBottom: theme.borderBottom, padding: "100px 0"}}
+    >
+         <Collapsible
                 accordion
                 popout
-            //  style={{borderBottom: theme.borderBottom}}
+               //  style={{borderBottom: theme.borderBottom}}
             >
-                <CollapsibleItem
+                <CollapsibleItem 
                     expanded={false}
-                    header="Xem phim và chương trình TV miễn phí ở phê phim"
-                    style={{ fontWeight: 'bold', color: "black" }}
+                    header="Fun! Watch Movies & TV Shows Online for FREE on B (Bi's film)"
+                    style={{ fontWeight: 'bold', color: "black"}}
                     icon={<Icon><i class="fa-solid fa-face-smile"></i></Icon>}
                     node="div"
                 >
                     <p style={{ fontWeight: 'normal', color: theme.color }}>
-                        Bạn có thích phim và phim truyền hình? Bạn có muốn xem chúng trực tuyến miễn phí nhưng không biết làm thế nào? Vâng, không tìm đâu xa. Phê phim là trang web cho phép người dùng xem phim truyền hình và phim miễn phí trên máy tính, máy tính xách tay, máy tính bảng hoặc điện thoại thông minh.
+                        Do you love movies and tv series? Do you want to watch them for free online, but don't know how? Well, look no further. B is a website that allows users to watch tv series and movies for free on their computers, laptops, tablets or smartphones.
+
+                        All the tv series and films are available in English which makes it easier for everyone around the world to enjoy. The best part about this site is that there's no sign up required! It doesn't matter if you're a kid or an adult – just go there, start watching tv shows and films without any form of payment whatsoever!
                     </p>
                 </CollapsibleItem>
                 <CollapsibleItem
                     expanded={false}
-                    header="Phê phim là gì ?"
-                    style={{ fontWeight: 'bold', color: "black" }}
+                    header="What is B?"
+                    style={{ fontWeight: 'bold', color: "black"}}
                     icon={<Icon><i class="fa-regular fa-user"></i></Icon>}
                     node="div"
                 >
                     <p style={{ fontWeight: 'normal', color: theme.color }}>
-                        Bộ phim bạn cần, được thiết kế bởi cubi để nghiên cứu trường hợp FER201m
-                        có thể truy cập được cho mọi người
+                    The film you need, designed by cubi for casestudy of FER201m to be
+            accessible for Everyone!
                     </p>
                 </CollapsibleItem>
                 <CollapsibleItem
                     expanded={false}
-                    header="Xài miễn phí"
+                    header="FREE to Use"
                     icon={<Icon><i class="fa-solid fa-heart"></i></Icon>}
-                    style={{ fontWeight: 'bold', color: "black" }}
+                    style={{ fontWeight: 'bold', color: "black"}}
 
                     node="div"
                 >
                     <p style={{ fontWeight: 'normal', color: theme.color }}>
-                        Phê phim là trang web phát trực tuyến phim và truyền hình dài tập miễn phí. Không thành vấn đề nếu bạn đang tìm phim hài, phim truyền hình hay thậm chí là phim hoạt hình – Phê phim có tất cả! Trang web cung cấp hàng nghìn tựa phim có sẵn để xem qua máy tính, máy tính xách tay, máy tính bảng hoặc điện thoại thông minh của bạn mà không phải trả bất kỳ khoản phí nào.                    </p>
+                        B is a free movies and tv series streaming website. It doesn't matter if you're looking for comedies, dramas, or even animated films – B has it all! The site offers thousands of titles that are available to watch through your computer, laptop, tablet, or smartphone without having to pay any fee whatsoever.
+                    </p>
                 </CollapsibleItem>
                 <CollapsibleItem
                     expanded={false}
-                    header="
-                    Tốt nhất cho những người yêu thích phim và phim truyền hình dài tập"
+                    header="Best for Movies and TV Series Lovers"
                     icon={<Icon><i class="fa-solid fa-film"></i></Icon>}
-                    style={{ fontWeight: 'bold', color: "black" }}
+                    style={{ fontWeight: 'bold', color: "black"}}
 
                     node="div"
                 >
                     <p style={{ fontWeight: 'normal', color: theme.color }}>
-
-                        Bạn có thích xem phim và phim truyền hình trực tuyến không? Nếu có thì Phê phim là phù hợp cho bạn! Trang web này có rất nhiều tựa phim được xem miễn phí. Không cần phải đăng ký hay trả tiền – chỉ cần đến đó, chọn thứ bạn muốn và bắt đầu tận hưởng nó nhiều nhất có thể!                    </p>
+                        Do you enjoy watching movies and tv series online? If yes, then B is perfect for you! The site has a wide range of titles that are all free to watch. There's no need to sign up or pay money – just go there, pick what you want and start enjoying it as much as possible!
+                    </p>
                 </CollapsibleItem>
-
+               
                 <CollapsibleItem
                     expanded={false}
-                    header="Không quảng cáo"
+                    header="No Disturbing Ads"
                     icon={<Icon><i class="fa-solid fa-rectangle-ad"></i></Icon>}
-                    style={{ fontWeight: 'bold', color: "black" }}
+                    style={{ fontWeight: 'bold', color: "black"}}
 
                     node="div"
                 >
                     <p style={{ fontWeight: 'normal', color: theme.color }}>
-                        Bạn không phải lo quảng cáo làm phiền khi streaming trên Phê phim. Trang web không có bất kỳ quảng cáo nào có thể làm gián đoạn trải nghiệm xem phim hoặc chương trình truyền hình của bạn! Phê phim có tất cả các thể loại bao gồm hài lãng mạn, phim truyền hình, phim hoạt hình, phim kinh dị và rất nhiều thể loại khác có sẵn để bạn thưởng thức bao nhiêu lần tùy thích! Trang web được cập nhật liên tục với các tựa sách mới nên bạn sẽ không bao giờ cảm thấy nhàm chán. Hàng ngàn bộ phim và phim truyền hình miễn phí? Vâng, làm ơn! Vào Phê phim ngay và bắt đầu xem nhé!</p>
+                        You don't have to worry about disturbing ads while streaming on B. The site is free of any adverts that could interrupt your film or tv show experience!
+
+                        B has all genres covered romantic comedies, dramas, animated films, horror movies and so much more are available there for you to enjoy as many times as you want! The site is constantly updated with new titles, so you'll never get bored. Thousands of movies and tv series for free? Yes please! Go to B now and start watching!
+                    </p>
                 </CollapsibleItem>
                 <CollapsibleItem
                     expanded={false}
-                    header="An toàn và bảo mật"
+                    header="Safe and Secure"
                     icon={<Icon><i class="fa-solid fa-regular fa-lock"></i></Icon>}
-                    style={{ fontWeight: 'bold', color: "black" }}
+                    style={{ fontWeight: 'bold', color: "black"}}
 
                     node="div"
                 >
                     <p style={{ fontWeight: 'normal', color: theme.color }}>
-                    Bạn có bất kỳ lo ngại nào về quyền riêng tư trực tuyến của mình không? Bạn không cần phải lo lắng khi duyệt trên Phê phim. Trang web này an toàn và bảo mật 100%! Mọi thứ xảy ra ở đó không thể truy ngược lại tên hoặc địa chỉ email của bạn – mọi thứ đều được ẩn để được bảo vệ tối đa do chính trang web cung cấp.</p>
+                        Do you have any concerns about your privacy online? There's no need to worry when it comes to browsing on B. The site is 100% safe and secure! Everything that happens there couldn't be traced back to your name or email address – everything stays hidden for maximum protection provided by the website itself.
+                    </p>
                 </CollapsibleItem>
 
             </Collapsible>
-        </Container>
-    )
+    </Container>
+  )
 }

@@ -14,7 +14,7 @@ export default function NavigationFC() {
     <div className="navigation-header"  style={{backgroundColor: theme.backgroundColor, borderBottomColor: theme.borderBottomColor, color: theme.color}}>
     <Navbar className="navigation-nav"  style={{backgroundColor: theme.backgroundColor, borderBottomColor: theme.borderBottomColor}}
     alignLinks="right"
-    brand={<Link style={{color: theme.color, textAlign: "start", fontWeight: "bold"}} className="brand-logo"><img className="logo-img" src="assets/images/phephim-logo.png"/></Link>}
+    brand={<Link style={{color: theme.color, textAlign: "start", fontWeight: "bold"}} className="brand-logo">B</Link>}
     id = "mobile-nav"
     menuIcon = {<Icon style={{backgroundColor: theme.backgroundColor, color: theme.color}}><i class="fa-solid fa-bars"></i></Icon>}
     options = {{
@@ -30,28 +30,22 @@ export default function NavigationFC() {
       <div className="navigation-item" style={{backgroundColor: theme.backgroundColor, color: theme.color}}>
       <NavItem>
       <Link to={"/"} style= {{color: theme.color}}>
-        Trang chủ
+        Home
       </Link>
       </NavItem>
       <NavItem>
       <Link to={"/news"} style= {{color: theme.color}}>
-        Tin tức
+        News
       </Link>
       </NavItem>
       <NavItem>
-        <Link to={"/category"} style= {{color: theme.color}}>
-          Thể loại
-          </Link>
+        <Link to={"/category"} style= {{color: theme.color}}>Category</Link>
       </NavItem>
       <NavItem>
-        <Link to={"/about"} style= {{color: theme.color}}>
-          Về chúng tôi
-          </Link>
+        <Link to={"/about"} style= {{color: theme.color}}>About</Link>
       </NavItem>
       <NavItem>
-        <Link to={"/contact"} style= {{color: theme.color}}>
-          Liên hệ
-          </Link>
+        <Link to={"/contact"} style= {{color: theme.color}}>Contact</Link>
       </NavItem>
       <NavItem>
         <Switch className="switch-mode" href="#switchmode" onClick={toggle} style={{backgroundColor: theme.backgroundColor, color: theme.color}}

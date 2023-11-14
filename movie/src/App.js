@@ -27,7 +27,7 @@ function App() {
         <Route path="/" element={<FilmFC />}></Route>
         <Route path="/detail/:id" element={<Detail />}></Route>
         <Route path="/category" element={<CategoryFC />}></Route>
-        {/* <Route path="/contact" element={<ContactFC/>}></Route> */}
+        <Route path="/contact" element={<ContactFC/>}></Route>
         <Route path="/about" element={<AboutFC/>}></Route>
         <Route path="/news" element={<NewsFC/>}></Route>
         {/* <Main/> */}

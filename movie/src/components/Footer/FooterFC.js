@@ -3,7 +3,7 @@ import { Container, Footer } from "react-materialize";
 import { ThemeContext } from "../ThemeContext";
 import "./Footer.css";
 export default function FooterFC() {
-  const { theme } = useContext(ThemeContext);
+  const {theme} = useContext(ThemeContext);
 
   return (
     <section
@@ -15,107 +15,103 @@ export default function FooterFC() {
     >
       <div
         className="containers footer-container"
-
+       
       >
         <div className="footer-item">
-          <a href="#!" className="footer-logo"
-            style={{
-              color: theme.color,
-            }}
+          <a href="index.html" className="footer-logo"
+           style={{
+            color: theme.color,
+          }}
           >
-            <img src="assets/images/phephim-logo.png" />
+            B
           </a>
         </div>
         <div className="footer-item">
           <a href="#!" className="footer-link"
-            style={{
-              color: theme.color,
-            }}
+           style={{
+            color: theme.color,
+          }}
           >
-
-            Sự kiện dành cho trẻ em
+            Events for Kids
           </a>
           <a href="#!" className="footer-link"
-            style={{
-              color: theme.color,
-            }}
+           style={{
+            color: theme.color,
+          }}
           >
-
-            Sự kiện dành cho phụ huynh
+            Events for Parents
           </a>
           <a href="#!" className="footer-link"
-            style={{
-              color: theme.color,
-            }}
+           style={{
+            color: theme.color,
+          }}
           >
-
-            Sự kiện dành cho khách
+            Events for Guests
           </a>
           <a href="#!" className="footer-link"
-            style={{
-              color: theme.color,
-            }}
+           style={{
+            color: theme.color,
+          }}
           >
-            Trò chơi & Quà tặng
+            Game & Gifts
           </a>
         </div>
         <div className="footer-item">
           <a href="#!" className="footer-link"
-            style={{
-              color: theme.color,
-            }}
+           style={{
+            color: theme.color,
+          }}
           >
-
-            Sự kiện
-          </a>
-          <a href="/about" className="footer-link"
-            style={{
-              color: theme.color,
-            }}
-          >
-            Chúng tôi là
+            Events
           </a>
           <a href="#!" className="footer-link"
-            style={{
-              color: theme.color,
-            }}
+           style={{
+            color: theme.color,
+          }}
           >
-            Dịch vụ
+            Who we are
           </a>
           <a href="#!" className="footer-link"
-            style={{
-              color: theme.color,
-            }}
+          style={{
+            color: theme.color,
+          }}
           >
-            Khuyến mại
+            Services
           </a>
           <a href="#!" className="footer-link"
-            style={{
-              color: theme.color,
-            }}
+          style={{
+            color: theme.color,
+          }}
           >
-            Đánh giá
+            Features
+          </a>
+          <a href="#!" className="footer-link"
+          style={{
+            color: theme.color,
+          }}
+          >
+            Reviews
           </a>
         </div>
         <div className="footer-item">
-          <a href="https://www.youtube.com/@PhePhim" className="footer-link"
-            style={{
-              color: theme.color,
-            }}
+          <a href="#!" className="footer-link"
+          style={{
+            color: theme.color,
+          }}
           >
-            Youtube
-          </a>
-          <a href="https://www.facebook.com/phephim/?locale=vi_VN" className="footer-link"
-            style={{
-              color: theme.color,
-            }}
-          >
-            Facebook
+            Careers
           </a>
           <a href="#!" className="footer-link"
-            style={{
-              color: theme.color,
-            }}
+          style={{
+            color: theme.color,
+          }}
+          >
+            Press
+          </a>
+          <a href="#!" className="footer-link"
+          style={{
+            color: theme.color,
+          }}
           >
             Help
           </a>
